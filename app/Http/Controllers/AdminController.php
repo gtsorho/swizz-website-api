@@ -15,6 +15,7 @@ class AdminController extends Controller
 
     public function login(Request $request)
     {
+        // login
         $credentials = $request->only('email', 'password');
 
         if ($token = auth()->guard('api')->attempt($credentials)) {
