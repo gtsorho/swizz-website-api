@@ -46,7 +46,7 @@ class AdminController extends Controller
     }
 
     public function validateData(){
-        
+        // image update
          request()->validate([
                 'file' => 'file|image|max:5000'
             ]);
